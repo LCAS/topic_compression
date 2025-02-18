@@ -12,5 +12,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Setup ROS and Build
         run: |
-          docker-compose -f ./docker/docker-compose-ci.yml build
+          docker compose -f ./docker/docker-compose-ci.yml build
         timeout-minutes: 5
