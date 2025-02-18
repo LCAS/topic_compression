@@ -3,7 +3,7 @@ on: [push, pull_request, release]
 jobs:
   ros_setup:
     name: Topic Compression Tests
-    runs-on: ubuntu-18.04 # host machine not container OS
+    runs-on: ubuntu-latest # host machine not container OS
     strategy:
       fail-fast: false
       matrix:
